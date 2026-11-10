@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>EDIT FORM</h1>
+  <%= simple_form_for @task do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.submit "Edit", class: 'btn btn-primary mt-2'  %>
+  <% end %>
+<%= link_to 'task list', tasks_path, class: 'btn btn-primary mt-2' %>
+</div>
